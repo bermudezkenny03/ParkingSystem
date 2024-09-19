@@ -1,7 +1,11 @@
-<!doctype html>
-<html lang="en" data-bs-theme="auto">
-  <head>
-
+<?php
+include('app/config.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Signin Template · Bootstrap v5.3</title>
@@ -86,7 +90,7 @@
     </div>
     <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
     <p class="mt-3 mb-3 text-muted" style="text-align: center;">¿No tienes una cuenta? 
-      <a href="register.html">Regístrate aquí</a>
+      <a href="register.php">Regístrate aquí</a>
     </p>
     <p class="text-center mt-4">
       <a href="index.php" class="btn-elegant">

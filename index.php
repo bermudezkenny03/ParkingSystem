@@ -33,8 +33,8 @@ include('app/config.php');
         <a href="#" class="text-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contacto</a>
       </div>
       <div class="hidden md:flex items-center space-x-4 rtl:space-x-reverse">
-        <a href="login.html" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 text-lg">Iniciar sesión</a>
-        <a href="register.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-lg">Registrarse</a>
+        <a href="login.php" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 text-lg">Iniciar sesión</a>
+        <a href="register.php" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-lg">Registrarse</a>
       </div>
       <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
         <span class="sr-only">Abrir menú</span>
@@ -48,8 +48,8 @@ include('app/config.php');
         <li><a href="#" class="text-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Inicio</a></li>
         <li><a href="#" class="text-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Servicios</a></li>
         <li><a href="#" class="text-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contacto</a></li>
-        <li><a href="login.html" class="text-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Iniciar sesión</a></li>
-        <li><a href="register.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-lg">Registrarse</a></li>
+        <li><a href="login.php" class="text-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Iniciar sesión</a></li>
+        <li><a href="register.php" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-lg">Registrarse</a></li>
       </ul>
     </div>
   </nav>
