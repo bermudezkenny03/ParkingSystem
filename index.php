@@ -3,6 +3,7 @@ include('app/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,12 +19,13 @@ include('app/config.php');
     }
   </style>
 </head>
+
 <body class="bg-gray-50 dark:bg-gray-900">
 
   <!-- Navbar -->
   <nav class="bg-white shadow-md dark:bg-gray-800">
     <div class="max-w-screen-xl flex items-center justify-between p-4 mx-auto">
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="./indexUser.php" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="https://flowbite.com/docs/images/logo.svg" class="h-10" alt="Parking Logo" />
         <span class="text-3xl font-bold text-gray-900 dark:text-white">Parking System</span>
       </a>
@@ -33,13 +35,13 @@ include('app/config.php');
         <a href="#" class="text-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contacto</a>
       </div>
       <div class="hidden md:flex items-center space-x-4 rtl:space-x-reverse">
-        <a href="login.php" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 text-lg">Iniciar sesión</a>
-        <a href="register.php" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-lg">Registrarse</a>
+        <a href="./forms/loginFroms.php" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 text-lg">Iniciar sesión</a>
+        <a href="./forms/registerForms.php" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-lg">Registrarse</a>
       </div>
       <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
         <span class="sr-only">Abrir menú</span>
         <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
       </button>
     </div>
@@ -49,7 +51,7 @@ include('app/config.php');
         <li><a href="#" class="text-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Servicios</a></li>
         <li><a href="#" class="text-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Contacto</a></li>
         <li><a href="login.php" class="text-lg text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">Iniciar sesión</a></li>
-        <li><a href="register.php" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-lg">Registrarse</a></li>
+        <li><a href="./forms/registerForms.php" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-lg">Registrarse</a></li>
       </ul>
     </div>
   </nav>
@@ -121,11 +123,12 @@ include('app/config.php');
   </footer>
 
   <script>
-    document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
       const menu = document.getElementById('navbar-default');
       menu.classList.toggle('hidden');
     });
   </script>
 
 </body>
+
 </html>

@@ -1,21 +1,25 @@
 <?php
 
-define('SERVIDOR','localhost');
-define('USERNAME','root');
-define('PASSWORD','');
-define('DATABASE','dbsistemaparking');
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "dbsistemaparking";
 
-$servidor = "mysql:dbname=".DATABASE.";host=".SERVIDOR;
+$conexion = new mysqli($host, $user, $pass, $db);
 
-try {
-    $pdo = new PDO($servidor, USERNAME, PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8"));
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+echo '<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>';
 
-    echo "<script>alert('La conexión a la base de datos fue exitosa')</script>";
-} catch (PDOException $e) {
-    echo "<script>alert('Error en la conexión a la base de datos: " . $e->getMessage() . "')</script>";
+if ($conexion->connect_error) {
+    echo '<script>
+            Swal.fire({
+                icon: "error",
+                title: "Error de conexión",
+                text: "No se pudo conectar a la base de datos. Verifique los detalles de la conexión.",
+                confirmButtonText: "Aceptar"
+            });
+          </script>';
+    exit();
 }
 
-$URL = 'http://localhost/loginAndRegister/';
-
+$URL = 'http://localhost/loginAndRegister/'; 
 ?>

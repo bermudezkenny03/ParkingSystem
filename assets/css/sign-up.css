@@ -24,6 +24,13 @@ body {
   border-bottom-left-radius: 0;
 }
 
+.form-signup input[type="tel"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
 .form-signup input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
